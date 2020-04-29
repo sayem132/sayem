@@ -144,8 +144,8 @@ section h2 span{
 section h2:before{
   content: '';
   position: absolute;
-  top: 7%;
-  left: 25%;
+  top: 5%;
+  left: 10%;
   width: 200px;
   height: 200px;
   background: transparent;
