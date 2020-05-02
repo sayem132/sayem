@@ -1,0 +1,28 @@
+body {
+     background: linear-gradient(#c955ff, #e91e63) no-repeat center center/cover;
+     font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+     font-size: 20px;
+     color:rgb(0, 0, 0);
+     margin: 20;
+     padding: 0;
+     left: 100%;
+     top: 100%;
+     margin-left: 1%;
+     margin-top: 5%;
+     background-size: cover;
+
+
+   }
+   .swiper-container {
+     width: 400px;
+     height: 400px;
+
+     left: 5%;
+     top: 50%;
+     margin-left: -100px;
+     margin-top: 350px;
+   }
+   .swiper-slide {
+     background-position: center;
+     background-size: cover;
+   }
