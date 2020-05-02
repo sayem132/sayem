@@ -1,0 +1,211 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+
+  font-family: monospace;
+  line-height: 1.6;
+  height: 100vh;
+
+}
+.container{
+  height: 100%;
+  width: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+}
+nav{
+
+  background: #ff0080;
+  height: 90px;
+  width: 100%;
+  overflow: auto;
+
+}
+label.logo{
+  color: white;
+  font-size: 40px;
+  line-height: 90px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+nav ul{
+  float: right;
+  margin-right: 25px
+
+
+}
+nav ul li{
+  display: inline-block;
+  line-height: 70px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #f4f4f4
+}
+a.active,a:hover{
+  background: rgb(183, 0, 255);
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#e01818, #9c3569);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+section
+{
+  scroll-behavior: smooth;
+  background: linear-gradient(#ffeb3b, #ff0055);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center;
+  width: 100%;
+
+}
+
+section h2 span{
+  font-size: 30px;
+  font-family: sans-serif;
+}
+.mosque
+{
+ background: url(mosque.png);
+ position: absolute;
+ height: 400px;
+ width: 100%;
+ bottom: 0;
+ left: 0;
+ background-repeat: repeat-x;
+ background-size: 1200px;
+ z-index: 1;
+ pointer-events: none;
+ animation: animate 12s linear infinite;
+
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0px;
+  }
+  100%
+  {
+    background-position: 1200px;
+  }
+}
+.mosque::before
+{
+ content: '';
+ background: url(mosque.png);
+ position: absolute;
+ height: 600px;
+ width: 100%;
+ bottom: 0;
+ left: 0;
+ background-repeat: repeat-x;
+ background-size: 1200px;
+ z-index: 1;
+ pointer-events: none;
+ animation: animateReverse 20s linear infinite;
+ opacity: 0.1;
+
+}
+@keyframes animateReverse
+{
+  0%
+  {
+    background-position: 0px;
+  }
+  100%
+  {
+    background-position: -1600px;
+  }
+}
+
+.particles-js-canvas-el
+{
+  top: 1%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+section#Home {
+  background: linear-gradient(#ffeb3b, #e91e63) no-repeat center center/cover;
+}
+section#about {
+  background: linear-gradient(#ff0055, #ff6ecf) no-repeat center center/cover;
+}
+section#Game {
+  background: linear-gradient(#ff6ecf, #d0ff63) no-repeat center center/cover;
+}
+section#games1 {
+  background: linear-gradient(#d0ff63, #fc62b7) no-repeat center center/cover;
+}
